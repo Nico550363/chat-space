@@ -36,21 +36,32 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
+## groupテーブル
+|Column|Type|Options|
+|------|----|-------|
+|groupname|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- has_many :groups_users
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
-###Association
+### Association
 - has_many :messeges
+- has_many :groups
 - has_many :groups_user
 
-##messagesテーブル
+
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|string|null: false|
+|text|text|null: false|
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
-###Association
+### Association
 - belongs_to :user
