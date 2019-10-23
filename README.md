@@ -25,6 +25,7 @@ Things you may want to cover:
 
 
 
+
 ## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
