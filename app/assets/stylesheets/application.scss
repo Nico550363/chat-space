@@ -1,7 +1,7 @@
-@import "reset";
-// @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "config/reset";
 @import "mixins/vendor_prefix";
 @import "modules/side_bar";
 @import "modules/chat";
-@import "messages/messages.scss";
+@import "messages/messages.scss"
+
