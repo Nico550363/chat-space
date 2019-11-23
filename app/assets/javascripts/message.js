@@ -22,13 +22,6 @@ $(function () {
     return html;
   }
 
-  // function scrollBottom() {
-  //   var target = $('.message').last();
-  //   var position = target.offset().top + $('.messages').scrollTop();
-  //   $('.messages').animate({
-  //     scrollTop: position
-  //   }, 300, 'swing');
-  // }
 
 $('#new_message').on('submit', function (e) {
   e.preventDefault();
@@ -48,7 +41,6 @@ $('#new_message').on('submit', function (e) {
     $('.messages').append(html);
     $(".form__submit").prop('disabled', false);
     $('#new_message')[0].reset();
-    // scrollBottom();
     $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight }, 'fast');
   })
     .fail(function(){
